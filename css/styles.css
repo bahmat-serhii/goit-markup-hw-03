@@ -5,7 +5,33 @@ body {
   color: #434455;
   background: #fff;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+}
+.container {
+  max-width: 1158px;
+  margin: 0 15px;
+  padding: 0 0;
+}
+.header {
+  display: flex;
+}
 .roboto-medium {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -26,6 +52,8 @@ body {
 }
 .top-line {
   background: #fff;
+  width: 1440px;
+  height: 72px;
 }
 .link-logo {
   font-weight: 700;
@@ -35,6 +63,30 @@ body {
   text-transform: uppercase;
   color: #4d5ae5;
   font-family: "Raleway", sans-serif;
+}
+.webstudio {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 0px;
+  width: 115px;
+  height: 24px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  margin-right: 76px;
+}
+.nav {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 40px;
+  width: 261px;
+  height: 24px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  margin-right: 332px;
 }
 
 .logo {
@@ -54,6 +106,7 @@ body {
   letter-spacing: 0.02em;
   color: #434455;
   font-family: "Roboto", sans-serif;
+  margin-right: 40px;
 }
 .email:hover {
   font-weight: 400;
@@ -70,6 +123,38 @@ body {
   letter-spacing: 0.02em;
   color: #404bbf;
   font-family: "Roboto", sans-serif;
+}
+.tel {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+  font-family: "Roboto", sans-serif;
+}
+.tel:hover {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #404bbf;
+  font-family: "Roboto", sans-serif;
+}
+.tel:focus {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #404bbf;
+  font-family: "Roboto", sans-serif;
+}
+.address {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 a {
   text-decoration: none;
@@ -190,6 +275,9 @@ ul {
   color: #fff;
   background: #404bbf;
   cursor: pointer;
+}
+.section {
+  padding: 120px 0;
 }
 .team {
   background: #f4f4fd;
