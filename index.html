@@ -21,7 +21,7 @@
   </head>
   <body>
     <header class="top-line">
-      <div class="container">
+      <div class="container header-cont">
         <nav class="header">
           <a href="./index.html" class="link-logo webstudio"
             >Web<span class="logo">Studio</span></a
@@ -33,12 +33,12 @@
           </ul>
           <address class="contacts">
             <ul class="address">
-              <li>
+              <li class="header-cont">
                 <a class="email" href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
               </li>
-              <li>
+              <li class="header-cont">
                 <a class="tel" href="tel:+110001111111">+11 (000) 111-11-11</a>
               </li>
             </ul>
@@ -55,6 +55,7 @@
       </section>
       <section class="section">
         <div class="container">
+          <h2 class="our-team visually-hidden">Our advanced</h2>
           <ul class="advanced">
             <li class="adv">
               <h3 class="advanced-list">Strategy</h3>
@@ -98,8 +99,10 @@
                 width="264"
                 height="260"
               />
-              <h3 class="advanced-list">Mark Guerrero</h3>
-              <p class="adv-text">Product Designer</p>
+              <div class="personal">
+                <h3 class="advanced-list">Mark Guerrero</h3>
+                <p class="adv-text">Product Designer</p>
+              </div>
             </li>
             <li class="foto">
               <img
@@ -108,8 +111,10 @@
                 width="264"
                 height="260"
               />
-              <h3 class="advanced-list">Tom Ford</h3>
-              <p class="adv-text">Frontend Developer</p>
+              <div class="personal">
+                <h3 class="advanced-list">Tom Ford</h3>
+                <p class="adv-text">Frontend Developer</p>
+              </div>
             </li>
             <li class="foto">
               <img
@@ -118,8 +123,10 @@
                 width="264"
                 height="260"
               />
-              <h3 class="advanced-list">Camila Garcia</h3>
-              <p class="adv-text">Marketing</p>
+              <div class="personal">
+                <h3 class="advanced-list">Camila Garcia</h3>
+                <p class="adv-text">Marketing</p>
+              </div>
             </li>
             <li class="foto">
               <img
@@ -128,8 +135,10 @@
                 width="264"
                 height="260"
               />
-              <h3 class="advanced-list">Daniel Wilson</h3>
-              <p class="adv-text">UI Designer</p>
+              <div class="personal">
+                <h3 class="advanced-list">Daniel Wilson</h3>
+                <p class="adv-text">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -138,7 +147,7 @@
         <div class="container">
           <h2 class="our-team">Our Portfolio</h2>
           <ul class="portf-list">
-            <li>
+            <li class="portf-table">
               <img
                 src="./images/portfolio/banking-app.jpg"
                 alt="Banking app"
@@ -150,7 +159,7 @@
                 <p class="adv-text">App</p>
               </div>
             </li>
-            <li>
+            <li class="portf-table">
               <img
                 src="./images/portfolio/cashless-payment.jpg"
                 alt="Cashless payment"
@@ -162,7 +171,7 @@
                 <p class="adv-text">Marketing</p>
               </div>
             </li>
-            <li>
+            <li class="portf-table">
               <img
                 src="./images/portfolio/meditation-app.jpg"
                 alt="Meditation app"
@@ -174,7 +183,7 @@
                 <p class="adv-text">App</p>
               </div>
             </li>
-            <li>
+            <li class="portf-table">
               <img
                 src="./images/portfolio/taxi-service.jpg"
                 alt="Taxi service"
@@ -186,7 +195,7 @@
                 <p class="adv-text">Marketing</p>
               </div>
             </li>
-            <li>
+            <li class="portf-table">
               <img
                 src="./images/portfolio/screen-illustrations.jpg"
                 alt="Screen illustrations"
@@ -198,7 +207,7 @@
                 <p class="adv-text">Design</p>
               </div>
             </li>
-            <li>
+            <li class="portf-table">
               <img
                 src="./images/portfolio/online-courses.jpg"
                 alt="Online courses"
@@ -216,15 +225,13 @@
     </main>
     <footer class="foot">
       <div class="container">
-        <nav class="foot-nav">
-          <a href="./index.html" class="link-logo"
-            >Web<span class="logo-foot">Studio</span></a
-          >
-          <p class="text-foot">
-            Increase the flow of customers and sales for your business with
-            digital marketing & growth solutions.
-          </p>
-        </nav>
+        <a href="./index.html" class="link-logo"
+          >Web<span class="logo-foot">Studio</span></a
+        >
+        <p class="text-foot">
+          Increase the flow of customers and sales for your business with
+          digital marketing & growth solutions.
+        </p>
       </div>
     </footer>
   </body>

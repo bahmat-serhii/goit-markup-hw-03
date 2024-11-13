@@ -30,11 +30,15 @@ img {
   display: block;
 }
 .container {
-  max-width: 1158px;
-  margin: 0 156px;
-  padding: 0 0;
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 .header {
+  display: flex;
+  align-items: center;
+}
+.header-cont {
   display: flex;
 }
 .roboto-medium {
@@ -59,6 +63,7 @@ img {
   background: #fff;
   width: 1440px;
   height: 72px;
+  border-bottom: 1px solid #e7e9fc;
 }
 .link-logo {
   font-weight: 700;
@@ -68,6 +73,8 @@ img {
   text-transform: uppercase;
   color: #4d5ae5;
   font-family: "Raleway", sans-serif;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 .webstudio {
   display: flex;
@@ -111,7 +118,6 @@ img {
   letter-spacing: 0.02em;
   color: #434455;
   font-family: "Roboto", sans-serif;
-  margin-right: 40px;
 }
 .email:hover {
   font-weight: 400;
@@ -160,6 +166,7 @@ img {
   flex-direction: row;
   margin-top: 24px;
   margin-bottom: 24px;
+  gap: 40px;
 }
 .effect {
   width: 1440px;
@@ -183,7 +190,7 @@ main {
   justify-content: flex-start;
   flex-direction: column;
   gap: 8px;
-  width: 264px;
+  width: calc((100% - 72px) / 4);
   height: 104px;
 }
 
@@ -194,6 +201,8 @@ main {
   letter-spacing: 0.02em;
   color: #2e2f42;
   font-family: "Roboto", sans-serif;
+  margin-bottom: 8px;
+  text-align: center;
 }
 .adv-text {
   font-weight: 400;
@@ -202,6 +211,7 @@ main {
   letter-spacing: 0.02em;
   color: #434455;
   font-family: "Roboto", sans-serif;
+  text-align: center;
 }
 .our-team {
   font-weight: 700;
@@ -223,8 +233,11 @@ main {
   gap: 32px;
   border-radius: 0 0 4px 4px;
   padding: 0px 0px 32px 0px;
-  width: 264px;
+  width: calc((100% - 72px) / 4);
   height: 380px;
+}
+.personal {
+  padding: 32px 0;
 }
 
 .link {
@@ -234,6 +247,7 @@ main {
   letter-spacing: 0.02em;
   color: #2e2f42;
   font-family: "Roboto", sans-serif;
+  padding: 24px 0;
 }
 .link:hover {
   font-weight: 500;
@@ -266,6 +280,7 @@ ul {
 
 .hero-image {
   background: #2e2f42;
+  padding: 188px 0;
 }
 .solutions {
   font-weight: 700;
@@ -274,7 +289,7 @@ ul {
   letter-spacing: 0.02em;
   color: #fff;
   text-align: center;
-  width: 496px;
+  max-width: 496px;
   height: 120px;
   margin-left: 316px;
   margin-right: 316px;
@@ -294,14 +309,15 @@ ul {
   margin-right: 478px;
   margin-bottom: 48px;
   border-radius: 4px;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
   padding: 16px 32px;
-  display: flex;
+  display: block;
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: row;
   gap: 10px;
+  border: none;
 }
 .btn:hover {
   font-family: "Roboto", sans-serif;
@@ -322,6 +338,19 @@ ul {
   color: #fff;
   background: #404bbf;
   cursor: pointer;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .section {
   padding: 120px 0;
@@ -354,12 +383,17 @@ ul {
 .portf-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+.portf-table {
+  width: calc((100% - 48px) / 3);
 }
 .foot {
   background: #2e2f42;
   width: 1440px;
   height: 312px;
+  padding: 100px 0;
 }
 .text-foot {
   font-weight: 400;
@@ -368,6 +402,7 @@ ul {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   font-family: "Roboto", sans-serif;
+  max-width: 264px;
 }
 .logo-foot {
   text-transform: uppercase;
@@ -387,6 +422,4 @@ ul {
   gap: 16px;
   width: 264px;
   height: 112px;
-  margin-top: 100px;
-  margin-bottom: 100px;
 }
