@@ -38,9 +38,7 @@ img {
   display: flex;
   align-items: center;
 }
-.header-cont {
-  display: flex;
-}
+
 .roboto-medium {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
