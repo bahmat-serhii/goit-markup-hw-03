@@ -159,13 +159,13 @@ img {
   color: #404bbf;
   font-family: "Roboto", sans-serif;
 }
-.addrs {
+.cont {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  flex-direction: row;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  flex-direction: row;
-  margin-top: 24px;
-  margin-bottom: 24px;
   gap: 40px;
 }
 .contacts {
@@ -176,6 +176,7 @@ img {
   letter-spacing: 0.02em;
   color: #434455;
   font-family: "Roboto", sans-serif;
+  display: flex;
 }
 .effect {
   width: 1440px;
