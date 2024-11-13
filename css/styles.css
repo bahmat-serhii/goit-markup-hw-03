@@ -6,6 +6,9 @@ body {
   background: #fff;
   width: 1440px;
   height: 3300px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 h1,
 h2,
@@ -165,6 +168,9 @@ img {
 a {
   text-decoration: none;
 }
+main {
+  flex-grow: 1;
+}
 .advanced {
   display: flex;
   height: 104px;
@@ -290,6 +296,12 @@ ul {
   border-radius: 4px;
   width: 169px;
   height: 56px;
+  padding: 16px 32px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 10px;
 }
 .btn:hover {
   font-family: "Roboto", sans-serif;
@@ -323,9 +335,31 @@ ul {
   justify-content: center;
   gap: 24px;
 }
-
+.portf {
+  height: 1000px;
+}
+.portf-img {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+  padding: 32px 16px;
+  width: 360px;
+  height: 120px;
+}
+.portf-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
 .foot {
   background: #2e2f42;
+  width: 1440px;
+  height: 312px;
 }
 .text-foot {
   font-weight: 400;
@@ -344,4 +378,15 @@ ul {
   text-transform: uppercase;
   color: #f4f4fd;
   font-family: "Raleway", sans-serif;
+}
+.foot-nav {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 16px;
+  width: 264px;
+  height: 112px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
