@@ -38,6 +38,9 @@ img {
   display: flex;
   align-items: center;
 }
+.header-cont {
+  display: flex;
+}
 
 .roboto-medium {
   font-family: "Roboto", sans-serif;
@@ -175,6 +178,8 @@ img {
   color: #434455;
   font-family: "Roboto", sans-serif;
   display: flex;
+}
+.cont-addr {
 }
 .effect {
   width: 1440px;
